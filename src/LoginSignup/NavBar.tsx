@@ -28,8 +28,8 @@ function NavBar({ page, children }: Props) {
           <>
             <div className="nav-links">
               <a href="#home">Home</a>
-              <a href="#features">Features</a>
               <a href="#categories">Categories</a>
+              <a href="#features">Features</a>
               <a href="#about">About Us</a>
               <a href="#how-it-works">How It Works</a>
             </div>
