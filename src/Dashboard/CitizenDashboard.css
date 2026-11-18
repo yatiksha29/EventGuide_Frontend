@@ -1,0 +1,466 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.citizen-dashboard {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: #f7f6fc;
+  font-family: Arial, sans-serif;
+}
+
+/* SIDEBAR */
+
+.citizen-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 18px;
+  background: #ffffff;
+  border-right: 1px solid #eeeaf7;
+}
+
+.citizen-logo {
+  margin-bottom: 55px;
+  color: #302052;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.citizen-logo span {
+  margin-right: 6px;
+  color: #7952d5;
+  font-size: 28px;
+}
+
+.sidebar-heading {
+  margin: 0 0 15px 12px;
+  color: #aaa2bb;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 13px 14px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #716b7d;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+  background: #eee8fc;
+  color: #7046ca;
+  font-weight: bold;
+}
+
+.sidebar-icon {
+  width: 23px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.sidebar-bottom {
+  display: block;
+  width: 100%;
+  margin-top: 95%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.logout-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.logout-btn:hover {
+  background: #fff0f0;
+  color: #d95353;
+}
+
+/* MAIN CONTENT */
+
+.citizen-main {
+  flex: 1;
+  min-width: 0;
+  padding: 38px 45px;
+}
+
+/* FIND VENDORS PAGE */
+
+.citizen-main:has(.event-page) {
+  padding: 20px 25px;
+}
+
+.citizen-main:has(.event-page) .event-page {
+  width: 100%;
+  min-width: 0;
+  min-height: auto;
+}
+
+.citizen-main:has(.event-page) .event-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.citizen-main:has(.event-page) .eventguide-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.32fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 25px;
+  width: 100%;
+  max-width: none;
+}
+
+.citizen-main:has(.event-page) .search-panel,
+.citizen-main:has(.event-page) .vendor-results-panel {
+  width: 100%;
+  min-width: 0;
+}
+
+/* DASHBOARD HEADER */
+
+.dashboard-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 35px;
+}
+
+.dashboard-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dashboard-heading h2 {
+  margin: 0;
+  color: #302052;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.dashboard-heading p {
+  margin: 0;
+  color: #928b9d;
+  font-size: 14px;
+}
+
+.citizen-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: #7952d5;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* DASHBOARD CONTENT */
+
+.dashboard-content {
+  width: 100%;
+}
+
+/* WELCOME BANNER */
+
+.welcome-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 250px;
+  padding: 38px 48px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #54349b, #8964df);
+  color: #ffffff;
+}
+
+.welcome-small {
+  margin: 0 0 15px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+
+.welcome-banner h1 {
+  margin: 13px 0;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.welcome-banner p:not(.welcome-small) {
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.explore-btn {
+  margin-top: 17px;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #6945b9;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.explore-btn:hover {
+  background: #eee8fc;
+  transform: translateY(-2px);
+}
+
+.banner-decoration {
+  margin-right: 45px;
+  color: rgba(255, 255, 255, 0.16);
+  font-size: 140px;
+}
+
+/* EVENT IMAGE */
+
+.event-image-section {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #514078, #9873ce);
+}
+
+.event-image-section img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-image-section::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(35, 20, 65, 0.72),
+    rgba(35, 20, 65, 0.08)
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.event-image-text {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 40px;
+  max-width: 480px;
+  color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.event-image-text h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.event-image-text p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* CHANGE PASSWORD */
+
+.coming-soon {
+  padding: 35px;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #302052;
+}
+
+.coming-soon h2 {
+  margin: 0 0 8px;
+}
+
+.coming-soon p {
+  margin: 0;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .citizen-main:has(.event-page) .eventguide-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .citizen-sidebar {
+    width: 190px;
+    padding: 20px 10px;
+  }
+
+  .citizen-main {
+    padding: 25px 22px;
+  }
+
+  .dashboard-heading h2 {
+    font-size: 25px;
+  }
+
+  .welcome-banner {
+    padding: 30px;
+  }
+
+  .welcome-banner h1 {
+    font-size: 28px;
+  }
+
+  .banner-decoration {
+    margin-right: 10px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .citizen-dashboard {
+    flex-direction: column;
+  }
+
+  .citizen-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .citizen-logo {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebar-item {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .sidebar-bottom {
+    margin-top: 15px;
+  }
+
+  .citizen-main {
+    padding: 20px 16px;
+  }
+
+  .citizen-main:has(.event-page) {
+    padding: 16px;
+  }
+
+  .dashboard-topbar {
+    min-height: 60px;
+    margin-bottom: 25px;
+  }
+
+  .dashboard-heading h2 {
+    font-size: 23px;
+  }
+
+  .dashboard-heading p {
+    font-size: 12px;
+  }
+
+  .citizen-avatar {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+  }
+
+  .welcome-banner {
+    min-height: 220px;
+    padding: 25px;
+  }
+
+  .welcome-banner h1 {
+    font-size: 25px;
+  }
+
+  .welcome-banner p:not(.welcome-small) {
+    font-size: 14px;
+  }
+
+  .banner-decoration {
+    display: none;
+  }
+
+  .event-image-section {
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .event-image-text {
+    right: 20px;
+    left: 20px;
+  }
+
+  .event-image-text h2 {
+    font-size: 23px;
+  }
+
+  .event-image-text p {
+    font-size: 13px;
+  }
+}
+
+/* Vendors right side height increase */
+
+.citizen-main:has(.event-page) .vendor-results-panel,
+.citizen-main:has(.event-page) .vendor-results-section {
+  min-height: calc(100vh - 40px);
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+

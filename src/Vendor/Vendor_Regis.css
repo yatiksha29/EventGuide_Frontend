@@ -1,0 +1,266 @@
+
+/* ===== Page Background ===== */
+.vendor-page {
+  min-height: 100vh;
+  padding: 45px 24px;
+  box-sizing: border-box;
+  background: #f1f5fc;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #263653;
+}
+
+/* ===== Main Form Card ===== */
+.vendor-box {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 38px 42px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e1e8f3;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(39, 69, 115, 0.09);
+}
+
+/* ===== Main Heading ===== */
+.vendor-box h2 {
+  margin: 0 0 35px;
+  padding-bottom: 22px;
+  text-align: center;
+  color: #244d8f;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  border-bottom: 1px solid #e9eef7;
+}
+
+/* ===== Section Heading ===== */
+.vendor-box h3 {
+  margin: 32px 0 24px;
+  padding: 13px 16px;
+  border-left: 4px solid #477bd1;
+  border-radius: 0 8px 8px 0;
+  background: #f3f7ff;
+  color: #294d82;
+  font-size: 18px;
+  font-weight: 650;
+}
+
+/* ===== Form Grid ===== */
+.vendor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px 30px;
+  margin-bottom: 26px;
+}
+
+/* ===== Individual Fields ===== */
+.vendor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.vendor-field label {
+  color: #40516e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ===== Inputs and Dropdowns ===== */
+.vendor-field input:not(.file-box),
+.vendor-field select {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border: 1px solid #d4deed;
+  border-radius: 8px;
+  background: #fbfcff;
+  color: #263653;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s,
+    background 0.2s;
+}
+
+.vendor-field input:not(.file-box):hover,
+.vendor-field select:hover {
+  border-color: #a8bddf;
+}
+
+.vendor-field input:focus,
+.vendor-field select:focus {
+  border-color: #477bd1;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(71, 123, 209, 0.12);
+}
+
+/* ===== Email + Fetch ===== */
+.email-row {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+}
+
+.email-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.email-row button {
+  min-width: 100px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 8px;
+  background: #477bd1;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.email-row button:hover {
+  background: #315fa5;
+  transform: translateY(-1px);
+}
+
+/* ===== Categories Section ===== */
+.category-grid {
+  margin-top: 30px;
+}
+
+.vendor-field select {
+  cursor: pointer;
+}
+
+/* ===== Selected Categories ===== */
+.selected-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 46px;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border: 1px solid #d4deed;
+  border-radius: 8px;
+  background: #fbfcff;
+}
+
+.category-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: #e8f0ff;
+  color: #315fa5;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.category-item button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #315fa5;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* ===== File Uploads ===== */
+.vendor-field .file-box {
+  width: 100%;
+  min-height: 82px;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 1px dashed #afc1df;
+  border-radius: 9px;
+  background: #f8faff;
+  color: #52627c;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.vendor-field .file-box:hover {
+  border-color: #477bd1;
+  background: #f1f6ff;
+}
+
+/* ===== Save and Update Buttons ===== */
+.vendor-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 25px;
+  border-top: 1px solid #e9eef7;
+}
+
+.vendor-buttons button {
+  width: 155px;
+  min-height: 46px;
+  border: 1px solid #315fa5;
+  border-radius: 8px;
+  background: #315fa5;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.vendor-buttons button:hover {
+  background: #244879;
+  box-shadow: 0 5px 14px rgba(49, 95, 165, 0.18);
+  transform: translateY(-2px);
+}
+
+/* ===== Tablet and Mobile ===== */
+@media (max-width: 650px) {
+  .vendor-page {
+    padding: 18px 10px;
+  }
+
+  .vendor-box {
+    padding: 24px 17px;
+    border-radius: 12px;
+  }
+
+  .vendor-box h2 {
+    font-size: 25px;
+    margin-bottom: 26px;
+  }
+
+  .vendor-box h3 {
+    font-size: 17px;
+    margin: 26px 0 20px;
+  }
+
+  .vendor-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 19px;
+  }
+
+  .email-row button {
+    min-width: 82px;
+    padding: 0 12px;
+  }
+
+  .vendor-buttons {
+    gap: 12px;
+  }
+
+  .vendor-buttons button {
+    width: 50%;
+  }
+}

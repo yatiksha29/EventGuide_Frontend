@@ -1,0 +1,345 @@
+
+/* Page background */
+.citizen-page {
+  min-height: 100vh;
+  padding: 35px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f7f4ff, #fcfbff);
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #30234d;
+}
+
+/* Main card */
+.citizen-card {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e7def5;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(75, 45, 120, 0.10);
+}
+
+/* Header */
+.citizen-header {
+  padding: 25px 30px;
+  background: linear-gradient(120deg, #57318f, #8054bd);
+  color: white;
+  text-align: center;
+}
+
+.citizen-header h1 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* Main content */
+.citizen-content {
+  padding: 30px;
+}
+
+/* Email row */
+.citizen-email {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr) 100px;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.citizen-email label,
+.citizen-field label {
+  color: #594576;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.citizen-email input,
+.citizen-field input {
+  width: 100%;
+  min-width: 0;
+  height: 43px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  border: 1px solid #ded4ed;
+  border-radius: 7px;
+  outline: none;
+  background: #fcfaff;
+  color: #30234d;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.citizen-email input:focus,
+.citizen-field input:focus {
+  border-color: #8054bd;
+  box-shadow: 0 0 0 3px rgba(128, 84, 189, 0.13);
+  background: white;
+}
+
+/* Buttons */
+.fetch-btn,
+.upload-data-btn,
+.modify-btn {
+  min-height: 42px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #68409f;
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.fetch-btn:hover,
+.upload-data-btn:hover,
+.modify-btn:hover {
+  background: #4e2d7c;
+  transform: translateY(-1px);
+}
+
+/* Two main columns */
+.citizen-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 22px;
+}
+
+/* Upload panel */
+.citizen-uploads {
+  padding: 20px 15px;
+  border: 1px solid #e7def5;
+  border-radius: 12px;
+  background: #faf8ff;
+  text-align: center;
+}
+
+.citizen-uploads h2 {
+  margin: 0 0 22px;
+  color: #68409f;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.upload-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.upload-item:last-child {
+  margin-bottom: 0;
+}
+
+/* File preview area */
+.upload-preview {
+  display: flex;
+  width: 145px;
+  height: 135px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px dashed #c7b4e1;
+  border-radius: 9px;
+  background: white;
+  color: #8054bd;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.upload-preview:hover {
+  border-color: #8054bd;
+  background: #f7f2ff;
+}
+
+.upload-icon {
+  display: flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eee5fa;
+  font-size: 27px;
+}
+
+.upload-label {
+  display: inline-flex;
+  min-width: 125px;
+  min-height: 35px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: #eee5fa;
+  color: #68409f;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.upload-label:hover {
+  background: #dfd0f2;
+}
+
+/* Right-side details */
+.citizen-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #e7def5;
+  border-radius: 12px;
+  background: white;
+}
+
+.citizen-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+/* Name and DOB */
+.citizen-name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  min-width: 0;
+}
+
+.gender-field {
+  max-width: 65%;
+}
+
+/* Address details */
+.address-section {
+  background: #fcfaff;
+}
+
+/* Bottom buttons */
+.citizen-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #eee7f6;
+}
+
+.upload-data-btn,
+.modify-btn {
+  min-width: 145px;
+  min-height: 44px;
+}
+
+.modify-btn {
+  background: #eee5fa;
+  color: #68409f;
+  border: 1px solid #d9c9ed;
+}
+
+.modify-btn:hover {
+  background: #dfd0f2;
+  color: #4e2d7c;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+  .citizen-page {
+    padding: 16px 10px;
+  }
+
+  .citizen-header {
+    padding: 22px 14px;
+  }
+
+  .citizen-header h1 {
+    font-size: 23px;
+  }
+
+  .citizen-content {
+    padding: 18px 14px;
+  }
+
+  .citizen-email {
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+  }
+
+  .citizen-email label {
+    grid-column: 1 / -1;
+  }
+
+  .citizen-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-uploads {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .citizen-uploads h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 5px;
+  }
+
+  .upload-item {
+    margin-bottom: 0;
+  }
+
+  .details-section {
+    padding: 16px;
+  }
+
+  .gender-field {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .citizen-name-row {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-actions {
+    gap: 10px;
+  }
+
+  .upload-data-btn,
+  .modify-btn {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .upload-preview {
+    width: 115px;
+    height: 115px;
+  }
+}
