@@ -73,7 +73,7 @@ function Citizen() {
     formData.append("backCard", backFile);
 
     try {
-      const response = await fetch(`${url}/ai-read-pic`, {
+      const response = await fetch(`${url}/Citizen/ai-read-pic`, {
         method: "POST",
         body: formData,
       });
@@ -135,7 +135,7 @@ function Citizen() {
     }
 
     try {
-      const response = await fetch(`${url}/find`, {
+      const response = await fetch(`${url}/Citizen/find`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -191,7 +191,7 @@ function Citizen() {
     }
 
     try {
-      const response = await fetch(`${url}/signup`, {
+      const response = await fetch(`${url}/Citizen/signup`, {
         method: "POST",
         body: createFormData(),
       });
@@ -217,7 +217,7 @@ function Citizen() {
     }
 
     try {
-      const response = await fetch(`${url}/update`, {
+        const response = await fetch(`${url}/Citizen/update`, {
         method: "POST",
         body: createFormData(),
       });
