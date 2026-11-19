@@ -1,21 +1,22 @@
-# Event Guide – Event Planning Platform 🎉
+# 🎉 Event Guide – Frontend
 
-**Event Guide** is a web-based event planning platform designed to simplify the process of discovering and connecting with event service providers.
+### Event Planning & Vendor Discovery Platform
 
-The platform provides a convenient interface where users can explore vendors based on their event requirements, compare services and manage their favourite vendors.
+Event Guide is a web-based event planning platform designed to make event planning easier by helping users discover and connect with event service providers.
 
-🌐 **Live Website:** https://event-guide-frontend.vercel.app/
+The platform provides a user-friendly interface where citizens can explore vendors, search for services and manage their favourite vendors.
 
-## Key Features
+## ✨ Key Features
 
-- **User Authentication:** Secure user registration and login using JWT.
-- **Vendor Discovery:** Search vendors based on city, event and service category.
-- **Vendor Registration:** Allows service providers to register their businesses.
+- **User Authentication:** Secure registration and login functionality.
+- **Vendor Registration:** Allows vendors to register their businesses and provide service details.
+- **Vendor Search:** Search vendors based on city, event and service category.
+- **Vendor Details:** View registered vendor information and services.
 - **Favourites:** Save and manage favourite vendors.
 - **Ratings & Reviews:** Rate vendors and view their average ratings.
-- **Responsive Interface:** User-friendly interface for easy navigation.
+- **Responsive UI:** Simple and user-friendly interface.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - React.js
 - TypeScript
@@ -24,12 +25,16 @@ The platform provides a convenient interface where users can explore vendors bas
 - Axios
 - React Router
 
-## Project Deployment
+## 🌐 Project Links
 
-**Frontend:** Deployed on Vercel.
+**Live Application:** https://event-guide-frontend.vercel.app/
 
-**Backend:** https://eventguide.onrender.com
+**Backend API:** https://eventguide.onrender.com
+
+## 🎯 Project Objective
+
+To provide a convenient platform where users can discover event-related services and connect with suitable vendors for their events.
 
 ---
 
-Developed as a MERN Stack project to make event planning and vendor discovery easier.
+**Event Guide | MERN Stack Project**
